@@ -29,7 +29,7 @@
                             <textarea name="description"  rows="3" class="form-control">{{$category->description}}</textarea>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <img src="{{asset('uploads/category/'.$category->image)}}"  width="80px" height="80px">
+                            <img src="{{asset($category->image)}}"  width="80px" height="80px">
                             <input type="file" name="image" class="form-control">
                         </div>
                      

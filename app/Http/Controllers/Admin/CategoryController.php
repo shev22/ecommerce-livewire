@@ -36,7 +36,7 @@ class CategoryController extends Controller
                     $ext = $file->getClientOriginalExtension();
                     $filename = time() . '.' . $ext;
                     $file->move('uploads/category', $filename);
-                    $category->image = 'uploads/category'.$filename;
+                    $category->image = 'uploads/category/'.$filename;
                 }
             
  
@@ -75,7 +75,7 @@ class CategoryController extends Controller
                     $ext = $file->getClientOriginalExtension();
                     $filename = time() . '.' . $ext;
                     $file->move('uploads/category', $filename);
-                    $category->image = 'uploads/category'.$filename;
+                    $category->image = 'uploads/category/'.$filename;
         }
             
  

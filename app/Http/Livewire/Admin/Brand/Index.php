@@ -33,6 +33,8 @@ class Index extends Component
 
     public function storeBrand()
     {
+
+    
         //$validatedData = $this->validate();
         Brand::create([
             'name' => $this->name,
