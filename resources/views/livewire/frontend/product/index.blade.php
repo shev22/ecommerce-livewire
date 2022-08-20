@@ -13,22 +13,22 @@
                     @endforeach
             </div>
         </div>
-    </div>
+    
 
-        {{-- <div class="card mt-3">
+      <div class="card mt-3">
             <div class="card-header"><h4>Price</h4></div>
                 <div class="card-body">
                 
                         <label for="" class="d-block">
-                            <input type="radio"  name="priceSort" wire:model="priceInputs"  value="High-to-Low"/>High to Low
+                            <input type="radio"  name="priceSort" wire:model="priceInputs"  value="high-to-low"/>High to Low
                         </label>
 
                         <label for="" class="d-block">
-                            <input type="radio"  name="priceSort" wire:model="priceInputs"  value="Low-to-High"/>Low to High
+                            <input type="radio"  name="priceSort" wire:model="priceInputs"  value="low-to-high"/>Low to High
                         </label>
             </div>
-        </div>  --}}
-            
+        </div>  
+    </div>     
         @endif
 
 
