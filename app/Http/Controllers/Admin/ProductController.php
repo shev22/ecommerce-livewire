@@ -31,6 +31,7 @@ class ProductController extends Controller
         $products->category_id = $request->input('category_id');
         $products->name = $request->input('name');
         $products->slug = $request->input('slug');
+        $products->brand = $request->input('brand');
         $products->small_description = $request->input('small_description');
         $products->description = $request->input('description');
         $products->original_price = $request->input('original_price');
@@ -79,11 +80,14 @@ class ProductController extends Controller
 
     public function update(Request $request, $product_id)
     {
+
+    
         $products = Product::findOrFail($product_id);
         if ($products) {
             $products->category_id = $request->input('category_id');
             $products->name = $request->input('name');
             $products->slug = $request->input('slug');
+            $products->brand = $request->input('brand');
             $products->small_description = $request->input('small_description');
             $products->description = $request->input('description');
             $products->original_price = $request->input('original_price');

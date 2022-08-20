@@ -30,13 +30,13 @@ class FrontendController extends Controller
 
         if($category)
         {
-             $products = Product::where('category_id', $category->id)->get();
+           
 
           // $products =  $category->products()->get();
         
         }else{
             return redirect()->back();
         }
-        return view('frontend.collections.products.index', compact('products', 'category'));
+        return view('frontend.collections.products.index', compact( 'category'));
     }
 }

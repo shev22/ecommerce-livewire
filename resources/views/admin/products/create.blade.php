@@ -57,8 +57,8 @@
                         </div>
                         <div class="mb-3">
                             <label for="">Select Brand</label>
-                            <select class="form-select" name = "brand_id">
-                                <option value="">Select a Category</option>
+                            <select class="form-select" name = "brand">
+                                <option value="">Select a Brand</option>
                                 @foreach($brands as $brand)
                                 <option value="{{$brand->name}}">{{$brand->name}}</option>
                                 @endforeach
