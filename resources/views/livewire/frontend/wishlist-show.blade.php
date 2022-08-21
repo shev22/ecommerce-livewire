@@ -39,9 +39,14 @@
                               
                                 <div class="col-md-4 col-12 my-auto">
                                     <div class="remove">
-                                        <a href="" class="btn btn-danger btn-sm">
-                                            <i class="fa fa-trash"></i> Remove
-                                        </a>
+                                        <button class="btn btn-danger" type="button"  wire:click="removeWishlistItem({{ $wishlistItem->id }})"> 
+                                       
+                                            <span wire:loading.remove wire:target="removeWishlistItem({{ $wishlistItem->id }})">
+                                                <i class="fa fa-trash"></i> Remove
+                                            </span>
+                                            <span wire:loading wire:target="removeWishlistItem({{ $wishlistItem->id }})">removing...</span>
+                                         
+                                        </button>
                                     </div>
                                 </div>
                             </div>
